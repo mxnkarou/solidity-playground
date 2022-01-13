@@ -77,7 +77,7 @@ contract Auction {
     function withdraw() external payable {
         uint bal = bids[msg.sender];
         bids[msg.sender] = 0;
-        (bool sent, bytes memory data) = payable(msg.sender).call(value: bal)("");
+        (bool sent, bytes memory data) = payable(msg.sender).call{value: bal}("");
         require(sent, "Withdrawl failed.");
 
         emit Withdraw(msg.sender, bal);
