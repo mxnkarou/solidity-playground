@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.7;
 
+// BUG: EVENT'S NOT BEING EMMITED
+
 contract Auction {
-    // Create an ommitable event.
+    // Create an emmitable event.
     event Start();
     // Create an event that sends the highest bidder & highest bid.
     event End(address highestBidder, uint256 highestBid);
