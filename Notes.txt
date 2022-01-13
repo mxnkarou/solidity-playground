@@ -1,0 +1,8 @@
+Solidity Notes
+
+Best practices:
+
+- make Functions private by default & set public when needed.
+- private functions are conventionally prefixed with an underscore.
+  - e.g. function "_addToArray(uint int) private {}".
+- use "memory" if a variable is not needed after computations. (e.g. Pure Functions, View Functions)
