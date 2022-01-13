@@ -2,6 +2,7 @@
 pragma solidity ^0.8.7;
 
 contract PureFunction {
+
     // A pure function is a function that does not do anything with the contract state.
     // Only does computations & returns a value.
 
