@@ -1,1 +1,1 @@
-# solidity-playground
+# Proof of Concept Smart Contracts in Solidity.
